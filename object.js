@@ -1,13 +1,17 @@
-var userOne = {
-  email: 'ryu@ninjas.com',
-  name: 'Ryu', 
-  login() {
-    console.log(this.email, 'has logged in');
-  },
-  logout() {
-    console.log(this.email, 'has logged out');
+class User {
+  constructor(email,name) {
+    this.email = email;
+    this.name = name;
   }
 }
 
-userOne.name = 'Yoshi';
-userOne['email'] = 'yoshi@ninja.com'
+let userOne = new User('ryu@ninja.com', 'Ryu');
+let userTwo = new User('yoshi@gmail.com', 'Yoshi');
+
+console.log(userOne);
+console.log(userTwo);
+
+// the 'new' keyword
+// - creates a new empty object {}
+// - sets the value of 'this' to be the new empty object
+// - calls the constructor method
