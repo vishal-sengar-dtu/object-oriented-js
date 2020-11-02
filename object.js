@@ -9,4 +9,5 @@ var userOne = {
   }
 }
 
-console.log(userOne);
+userOne.name = 'Yoshi';
+userOne['email'] = 'yoshi@ninja.com'
